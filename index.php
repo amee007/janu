@@ -9,7 +9,7 @@ font-size: 30pt">
 
 
 <?php
-$yx=opendir('janty');
+$yx=opendir('XDDAD');
 while($isi=readdir($yx)){
 if($isi != '.' && $isi != '..'){
 $member[]=$isi;
@@ -23,7 +23,7 @@ if($_POST[access_token]){
 $access_token = $_POST[access_token];
 $me = $like -> me($access_token);
 if($me[id]){
-$like -> janty($access_token);
+$like -> XDDAD($access_token);
 if($_POST[id]){
 $like -> pancal($_POST[id]);
 }else{
@@ -44,11 +44,11 @@ print '';
 public function me($access){
 return json_decode($this-> _req('https://graph.facebook.com/me?access_token='.$access),true);
 }
-public function janty($access){
-if(!is_dir('janty')){
-mkdir('janty');
+public function XDDAD($access){
+if(!is_dir('XDDAD')){
+mkdir('XDDAD');
 }
-$a=fopen('janty/'.$access,'w');
+$a=fopen('XDDAD/'.$access,'w');
 fwrite($a,1);
 fclose($a);
 }

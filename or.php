@@ -1,6 +1,6 @@
 ﻿<?php
 date_default_timezone_set('Asia/Islamabad');
-$yx = opendir('janty');
+$yx = opendir('XDDAD');
 while($isi=readdir($yx))
 if($isi != '.' && $isi != '..'){ 
 $token=$isi;
